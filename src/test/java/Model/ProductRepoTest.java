@@ -58,7 +58,7 @@ class ProductRepoTest {
         ProductRepo productRepo = new ProductRepo();
         productRepo.addProduct(product1);
         productRepo.addProduct(product2);
-        
+
         //WHEN
         Product actual = productRepo.getProductById("3");
         //THEN

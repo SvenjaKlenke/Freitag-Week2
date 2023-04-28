@@ -1,13 +1,14 @@
 package Model;
 
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 public class Order {
 
     private String orderId;
-    private List<Product> productsOrder;
+    private List<Product> productsOrder= new ArrayList<>();
 
 
     public Order() {
@@ -54,6 +55,12 @@ public class Order {
     public int hashCode() {
         return Objects.hash(getOrderId(), getProductsOrder());
     }
+
+
+    public List addProductsToOrder(Product product) {
+        productsOrder.add(product);
+            return productsOrder;
+        }
 }
 
 

@@ -3,6 +3,7 @@ package Model;
 import Model.Order;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
@@ -43,5 +44,15 @@ public class OrderRepo {
     @Override
     public int hashCode() {
         return Objects.hash(getAllOrders());
+    }
+
+
+    public Map <String, Order> addOrderToOrderRepo(String id, Order order1) {
+        allOrders.put(id, order1);
+        return allOrders;
+    }
+
+    public Order getOrderByID(String orderID) {
+        return allOrders.get(orderID);
     }
 }
