@@ -78,7 +78,7 @@ class ShopServiceTest {
         //WHEN
         Map <String, Order> actual = shopService.addOrderToShopService("1", order1);
         //THEN
-        assertEquals (expected, actual); ;
+        assertEquals (expected, actual);
     }
 
     @Test
