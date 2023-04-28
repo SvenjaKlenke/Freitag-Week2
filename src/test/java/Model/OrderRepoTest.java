@@ -29,7 +29,7 @@ class OrderRepoTest {
         //WHEN
         Map <String, Order> actual = orderRepo.addOrderToOrderRepo("1",order1);
         //THEN
-        assertEquals (expected, actual); ;
+        assertEquals (expected, actual);
     }
 
     @Test
@@ -51,5 +51,4 @@ class OrderRepoTest {
         //WHEN & THEN
         assertTrue (order1 == orderRepo.getOrderByID("1"));
     }
-
 }
